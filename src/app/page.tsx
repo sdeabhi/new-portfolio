@@ -1,5 +1,4 @@
 import Contact from "@/components/contact";
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -25,24 +24,37 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
-             
+             <p>
+       
+      </p>
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-               
+              <span>  <a
+          href="https://drive.google.com/file/d/1Tx0hifpPQoMjya4c07vdD_AbiFI0ttTh/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-500 no-underline bg-white p-1 rounded-md" 
+        >
+          Download Resume
+        </a>
+        </span>  
             </div>
+            
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} className="object-cover"/>
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
+            
           </div>
         </div>
       </section>
       <section id="about">
+  
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
