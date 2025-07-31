@@ -8,7 +8,7 @@ export const DATA = {
   location: "Gorakhpur, UP",
   locationLink: "https://www.google.com/maps/place/gorakhpur",
   description:
-    "Software Development Engineer",
+    "FullStack Developer",
   summary:
     "Software Developer with expertise in Backend and AWS Cloud Services. Proven track record of building scalable applications and optimizing cloud infrastructure to drive business transformation. Strong problem-solving abilities and experience in delivering secure, high-performance solutions. Eager to contribute to innovative projects and enhance technical proficiency.",
   avatarUrl: "/sdeabhi1.jpg",
