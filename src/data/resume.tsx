@@ -8,14 +8,13 @@ export const DATA = {
   location: "Gorakhpur, UP",
   locationLink: "https://www.google.com/maps/place/gorakhpur",
   description:
-    "Software Development Engineer",
+    "FullStack Developer",
   summary:
     "Software Developer with expertise in Backend and AWS Cloud Services. Proven track record of building scalable applications and optimizing cloud infrastructure to drive business transformation. Strong problem-solving abilities and experience in delivering secure, high-performance solutions. Eager to contribute to innovative projects and enhance technical proficiency.",
   avatarUrl: "/sdeabhi1.jpg",
   skills: [
-    "Node js", "MongoDB", "Express.js", "React.Js", "JavaScript", "AWS", "EC2",
-    "S3 Buckets", "REST APIs", "Postman", "Github", "GitLab",
-    "Google Play Console", "C++"
+   "MERN Stack", "Node js", "MongoDB", "Express.js", "React.Js", "JavaScript", "HTML5 & CSS","Redux, Context API", "AWS (EC2, S3 Buckets, Route53)", "REST APIs", "Postman", "Github", "GitLab",
+    "Google Play Console", "Google Admob", "Google Search Console Console"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -84,30 +83,38 @@ export const DATA = {
   ],
   education: [
     {
+      school: "B.Tech Computer Science & Engineering",
+      href: "https://aktu.ac.in/",
+      degree: "Sagar Institute of Technology and Management",
+      logoUrl: "https://aktu.ac.in/images/logo.png",
+      start: "",
+      end: "Barabanki, India",
+    },
+    {
       school: "Diploma in Information Technology",
       href: "https://urise.up.gov.in/poly/2201",
       degree: "Government Polytechnic Lucknow",
       logoUrl: "https://urise.up.gov.in/resources/profile_image/2201_IMG-20211211-WA0000.jpg",
-      start: "2020",
-      end: "2023",
+      start: "",
+      end: "Lucknow, India",
     },
     {
       school: "Intermediate",
       href: "https://upmsp.edu.in/",
       degree: "Pawanagar Mahaveer Inter College, Kushinagar",
       logoUrl: "https://upmsp.edu.in/images/logonamebig.png",
-      start: "2018",
-      end: "2020",
+      start: "",
+      end: "Kushinagar, India",
     },
     
   ],
   projects: [
-    {
-      title: "Sarkari Private Jobs",
-      href: "https://sarkariprivatejobs.com/",
+     {
+      title: "Loop and Cut (Ecommerce)",
+      href: "https://www.loopandcut.in/",
       active: true,
       description:
-        "One stop plateform for Government and Privatejobs, Handled overall backend and colaborated with frontend team, Plateform for employers and employees both.",
+        "Implemented user authentication with JWT-based login and Bcrypt for password hashing. Wishlist Functionality – Developed a wishlist feature allowing users to save their favorite rugs for future purchases. Implemented a dynamic cart system that enables users to add, update, and remove items before checkout.",
       // technologies: [
       //   "Next.js",
       //   "Typescript",
@@ -121,7 +128,34 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://sarkariprivatejobs.com/",
+          href: "https://www.loopandcut.in/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/loop.png",
+      // video:
+      //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+    },
+    {
+      title: "Sarkari Private Jobs",
+      href: "https://www.loopandcut.in/",
+      active: true,
+      description:
+        "From Scratch to 500+ Downloads on Google PlayStore.Designed and developed a scalable backend and Frontend to support seamless interaction between employers and candidates.Ensured secure authentication using JWT & bcrypt.Implemented Google Admob Service.Implemented an inShorts-style feature for Latest Job News, delivering concise, and engaging updates to users.Implemented Firebase Push Notifications.",
+      // technologies: [
+      //   "Next.js",
+      //   "Typescript",
+      //   "PostgreSQL",
+      //   "Prisma",
+      //   "TailwindCSS",
+      //   "Stripe",
+      //   "Shadcn UI",
+      //   "Magic UI",
+      // ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.loopandcut.in/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -129,6 +163,7 @@ export const DATA = {
       // video:
       //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
+   
     {
       title: "{Ruut} Ecommerce Application",
       href: "https://ruutlabs.co.in/",

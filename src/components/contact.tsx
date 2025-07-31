@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
       </p>
       <p>
         <a
-          href="https://drive.google.com/file/d/1Tx0hifpPQoMjya4c07vdD_AbiFI0ttTh/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nHx4u4vx7JEMFfm0P_ZfeGeLuAKPzHVe/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-500 no-underline"
