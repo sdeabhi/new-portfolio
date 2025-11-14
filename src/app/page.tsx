@@ -24,37 +24,39 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
-             <p>
-       
-      </p>
+              <p></p>
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] md:text-md"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-              <span>  <a
-          href="https://drive.google.com/file/d/1Tx0hifpPQoMjya4c07vdD_AbiFI0ttTh/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-500 no-underline bg-white p-1 rounded-md" 
-        >
-          Download Resume
-        </a>
-        </span>  
+              <span>
+                {" "}
+                <a
+                  href="https://drive.google.com/file/d/1_-HI5734jp0eAp4UeZOiPUlDdTxAhhxm/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-100 no-underline bg-black dark:bg-white dark:text-black p-1 rounded-md"
+                >
+                  Download Resume
+                </a>
+              </span>
             </div>
-            
+
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} className="object-cover"/>
+                <AvatarImage
+                  alt={DATA.name}
+                  src={DATA.avatarUrl}
+                  className="object-cover"
+                />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
-            
           </div>
         </div>
       </section>
       <section id="about">
-  
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
@@ -113,21 +115,20 @@ export default function Page() {
               key={education.school}
               delay={BLUR_FADE_DELAY * 8 + id * 0.05}
             >
-             <ResumeCard
-  key={education.school}
-  href={education.href || '#'}  // Provide fallback if href is missing
-  logoUrl={education.logoUrl}
-  altText={education.school}
-  title={education.school}
-  subtitle={education.degree}
-  period={`${education.start} - ${education.end}`}
-/>
-
+              <ResumeCard
+                key={education.school}
+                href={education.href || "#"} // Provide fallback if href is missing
+                logoUrl={education.logoUrl}
+                altText={education.school}
+                title={education.school}
+                subtitle={education.degree}
+                period={`${education.start}  ${education.end}`}
+              />
             </BlurFade>
           ))}
         </div>
       </section>
-     
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -159,7 +160,10 @@ export default function Page() {
                   title={project.title}
                   description={project.description}
                   image={project.image}
-                  links={project.links} dates={""} tags={[]}/>
+                  links={project.links}
+                  dates={""}
+                  tags={[]}
+                />
               </BlurFade>
             ))}
           </div>
@@ -229,7 +233,7 @@ export default function Page() {
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.
               </p>
-              <Contact/>
+              <Contact />
             </div>
           </BlurFade>
         </div>
